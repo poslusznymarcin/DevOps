@@ -11,7 +11,7 @@ class MyHandler(http.server.SimpleHTTPRequestHandler):
         self.send_header('Content-type', 'application/json')
         self.end_headers()
         # Treść odpowiedzi (JSON)
-        response = {"id": 1, "content": "Hello, DevOps World!"}
+        response = {"id": 1, "content": "Hello, DevOps World!!"}
         self.wfile.write(bytes(json.dumps(response), "utf8"))
 
 # Uruchomienie serwera
